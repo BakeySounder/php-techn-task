@@ -1,6 +1,6 @@
 # php-techn-task
  Тестовое задание на языке PHP
- 
+# Посмотреть на сайте ->(http://bakey.by/).
 Задания:
 ># 1. Время выполнения 40-60 мин
 >сделать на нативном php перебор массива (https://cdn.jsdelivr.net/gh/andr-04/inputmask-multi@master/data/>phone-codes.json) и определить к какой стране относится номера телефонов
