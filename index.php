@@ -6,26 +6,23 @@
     <title>Тестовое задание</title>
 </head>
 <body>
-
+<form action="" method="post" id ="form1">
+    <input type="text" name="Phone" id="">
+    <button type="submit">Отправить</button>
+</form>
 </body>
+<script src = "index.js"></script>
 </html>
 
 <?php
-function get_masks(){
-    $json = file_get_contents("https://cdn.jsdelivr.net/gh/andr-04/inputmask-multi@master/data/phone-codes.json");
-    $masks = json_decode($json, true);
-    return $masks;
-}
 
-function clear_phone_number($phone_number){
-    $phone_number = trim($phone_number);
-    return $phone_number;
-}
 
-$masks = get_masks();
+include("phones.php");
 $test_phones = [ "+375(29)123-45-67", "+7 (495) 123 45 67", "7 777 123-45-67"];
-echo strlen("  +3432 2 ");
-echo "<br>";
-echo strlen(clear_phone_number("  +3432 2 "));
+
+
+foreach ($test_phones as $key => $value) {
+    echo $value . " -> ".get_country_of_phone(clear_phone_number($value),$asc_masks). "<br>";
+}
 ?>
 
