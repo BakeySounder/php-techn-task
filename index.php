@@ -72,17 +72,17 @@ foreach ($test_phones as $key => $value) {
         }
         
         #banner-btn {
-            margin-top: 20px;
-            padding-top: 10px;
+            margin-top: 40px;
+            padding-top: 12px;
             padding-left: 40px;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
             padding-right: 40px;
-            width: 124px;
-            height:41px;
+            width: 20vh;
+            height:6vh;
             background: #78599C;
             border: 0px solid black;
             font-family: "Nunito";
-            font-size: 14px;
+            font-size: 16px;
             font-weight: normal;
             border-radius: 4px;
         }
