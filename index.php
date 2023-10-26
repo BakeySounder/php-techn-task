@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <style>
     .popup {
@@ -22,8 +22,8 @@
 
 <body>
 <form action="" method="post" id ="form1">
-    <input type="text" name="Phone" id="">
-    <button type="submit">Отправить</button>
+    <input class="form-control w-25" placeholder="Введите номер телефона, чтобы узнать страну" type="text" name="Phone" id="">
+    <button type="submit" class="btn btn-primary">Отправить</button>
 </form>
 
   <div id="cookiePopup" class="popup">
@@ -34,6 +34,7 @@
   </div>
 </body>
 <script src = "index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </html>
 
 <?php
